@@ -22,12 +22,14 @@
                         <label for="url">URL</label>
                         <input type="url" class="form-control" id="url" name="url" placeholder="Enter URL">
                     </div>
+                    <br>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
+                <br>
                 <?php
                     if(isset($_POST['url'])){
                         $url = $_POST['url'];
