@@ -20,7 +20,7 @@
                 <form action="index.php" method="post">
                     <div class="form-group">
                         <label for="url">URL</label>
-                        <input type="text" class="form-control" id="url" name="url" placeholder="Enter URL">
+                        <input type="url" class="form-control" id="url" name="url" placeholder="Enter URL">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
@@ -33,31 +33,6 @@
                         $url = $_POST['url'];
                         $url = trim($url);
                         $old_url = $url;
-                        $url = filter_var($url, FILTER_SANITIZE_URL);
-                        if(filter_var($url, FILTER_VALIDATE_URL)){
-                            $url = str_replace('http://', '', $url);
-                            $url = str_replace('https://', '', $url);
-                            $url = str_replace('www.', '', $url);
-                            $url = str_replace('/', '', $url);
-                            $url = str_replace('.', '', $url);
-                            $url = str_replace('-', '', $url);
-                            $url = str_replace('_', '', $url);
-                            $url = str_replace('+', '', $url);
-                            $url = str_replace('=', '', $url);
-                            $url = str_replace('%', '', $url);
-                            $url = str_replace('&', '', $url);
-                            $url = str_replace('?', '', $url);
-                            $url = str_replace('#', '', $url);
-                            $url = str_replace('!', '', $url);
-                            $url = str_replace('@', '', $url);
-                            $url = str_replace('$', '', $url);
-                            $url = str_replace('^', '', $url);
-                            $url = str_replace('*', '', $url);
-                            $url = str_replace('(', '', $url);
-                            $url = str_replace(')', '', $url);
-                        }else{
-                            $url = 'Invalid URL';
-                        }
 
                         $rand = rand(1, 9999);
                         
@@ -72,9 +47,5 @@
         </div>
     </div>
 
-
-
-
-  <script src="https://cdn.jsdelivr.net/gh/yanchokraev/grayshift@1.0.2/dist/js/grayshift.min.js" integrity="sha384-8jCLciEK/63juoJgc5SxCqHbZwhVfEQb7TUYSdbDrZV97ozI9/UBWCvr9O8r8JJT" crossorigin="anonymous"></script>
 </body>
 </html>
