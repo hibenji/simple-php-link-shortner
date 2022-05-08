@@ -17,7 +17,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <form action="index.php" method="post">
+                <form action="/" method="post">
                     <div class="form-group">
                         <label for="url">URL</label>
                         <input type="url" class="form-control" id="url" name="url" placeholder="Enter URL">
