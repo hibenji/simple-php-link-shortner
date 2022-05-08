@@ -3,7 +3,7 @@
 Just a simple url shortner.
 
 
-## remove .php extension
+## Remove .php extension
 
 You will have to use one of the following guides to remove the .php extension.
 
