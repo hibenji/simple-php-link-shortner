@@ -39,7 +39,7 @@
                         $rand = rand(1, 9999);
                         
                         $myfile = fopen("".$rand.".php", "w");
-                        $txt = "<?php header('Location: ".$old_url."');?>";
+                        $txt = "<script>window.location.replace('".$old_url."');</script><a href='".$old_url."'>Press here to redirect now!</a>";
                         fwrite($myfile, $txt);
 
                         echo '<a href="https://short.benji.link/'.$rand.'" target="_blank">https://short.benji.link/'.$rand.'</a>';
