@@ -38,7 +38,7 @@
 
                         $rand = rand(1, 9999);
                         
-                        $myfile = fopen("".$rand.".php", "w");
+                        $myfile = fopen("".$rand.".html", "w");
                         $txt = "<script>window.location.replace('".$old_url."');</script><a href='".$old_url."'>Press here to redirect now!</a>";
                         fwrite($myfile, $txt);
 
