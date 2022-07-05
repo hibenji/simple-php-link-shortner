@@ -20,7 +20,7 @@
                 <form action="/" method="post">
                     <div class="form-group">
                         <label for="url">URL</label>
-                        <input type="url" class="form-control w-50" id="url" name="url" placeholder="Enter URL">
+                        <input type="url" class="form-control w-50" id="url" name="url" placeholder="Enter URL" required>
                     </div>
                     <br>
                     <button type="submit" class="btn btn-primary">Submit</button>
