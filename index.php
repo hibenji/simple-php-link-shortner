@@ -34,12 +34,11 @@
                     if(isset($_POST['url'])){
                         $url = $_POST['url'];
                         $url = trim($url);
-                        $old_url = $url;
-
+                        
                         $rand = rand(1, 9999);
                         
                         $myfile = fopen("".$rand.".php", "w");
-                        $txt = "<?php header('Location: ".$old_url."');?>";
+                        $txt = "<?php header('Location: ".$url."');?>";
                         fwrite($myfile, $txt);
 
                         echo '<a href="https://short.benji.link/'.$rand.'" target="_blank">https://short.benji.link/'.$rand.'</a>';
